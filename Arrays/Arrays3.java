@@ -112,7 +112,7 @@
 }*/
 
 //Sort an array of 0's, 1's and 2's
-public class Arrays3 {
+/*public class Arrays3 {
     static void sortAsc(int[] arr) {
         int count0 = 0;
         int count1 = 0;
@@ -145,4 +145,4 @@ public class Arrays3 {
         int arr[] = { 0, 1, 0, 1, 2, 0, 2, 1, 2, 1 };
         sortAsc(arr);
     }
-}
+}*/

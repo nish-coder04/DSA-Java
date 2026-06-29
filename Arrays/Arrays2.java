@@ -122,3 +122,48 @@ public class Arrays2 {
     }
 }*/
 
+//shift an array by k position 
+/*public class Arrays2 {
+    static void shiftByK(int[] arr, int k) {
+        for (int j = 1; j <= k; j++) {
+            for (int i = arr.length - 1; i >= 1; i--) {
+                int temp = arr[i];
+                arr[i] = arr[i - 1];
+                arr[i - 1] = temp;
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+        shiftByK(arr, 5);
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+    }
+}*/
+
+//Union of Arrays 
+import java.util.HashSet;
+
+public class Arrays2 {
+    static void getUnion(int[] arr1, int[] arr2) {
+        HashSet<Integer> unionArr = new HashSet<>();
+        for (int i = 0; i < arr1.length; i++) {
+            unionArr.add(arr1[i]);
+        }
+        for (int i = 0; i < arr2.length; i++) {
+            unionArr.add(arr2[i]);
+        }
+        System.out.print("Union : " + unionArr + " ");
+
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = { 1, 2, 3, 4 };
+        int[] arr2 = { 3, 4, 5, 6 };
+        getUnion(arr1, arr2);
+
+    }
+}
