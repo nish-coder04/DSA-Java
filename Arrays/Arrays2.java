@@ -145,7 +145,7 @@ public class Arrays2 {
 }*/
 
 //Union of Arrays 
-import java.util.HashSet;
+/*import java.util.HashSet;
 
 public class Arrays2 {
     static void getUnion(int[] arr1, int[] arr2) {
@@ -166,4 +166,4 @@ public class Arrays2 {
         getUnion(arr1, arr2);
 
     }
-}
+}*/
