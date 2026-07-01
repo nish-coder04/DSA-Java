@@ -153,12 +153,12 @@ public class Arrays4 {
 }*/
 
 // find pivot index
-public class Arrays4 {
+/*public class Arrays4 {
     static int pivotIndex(int[] nums) {
         int[] leftSum = new int[nums.length];
         int[] rightSum = new int[nums.length];
         leftSum[0] = nums[0];
-        rightSum[0] = nums[nums.length - 1];
+        rightSum[nums.length - 1] = nums[nums.length - 1];
         for (int i = 1; i < nums.length; i++) {
             leftSum[i] = nums[i] + leftSum[i - 1];
         }
@@ -167,7 +167,6 @@ public class Arrays4 {
         }
         for (int i = 0; i < nums.length; i++) {
             if (leftSum[i] == rightSum[i]) {
-                System.out.println(i);
                 return i;
             }
         }
@@ -176,6 +175,7 @@ public class Arrays4 {
 
     public static void main(String[] args) {
         int[] nums = { 1, 7, 3, 6, 5, 6 };
-        pivotIndex(nums);
+        int output = pivotIndex(nums);
+        System.out.println(output);
     }
-}
+}*/
