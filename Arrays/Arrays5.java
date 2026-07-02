@@ -57,7 +57,7 @@ public class Arrays5 {
     }
 }*/
 
-public class Arrays5 {
+/*public class Arrays5 {
     static int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
         int sum = 0;
@@ -78,4 +78,6 @@ public class Arrays5 {
         int result = maxSubArray(nums);
         System.out.println("Maximum subarray sum is: " + result);
     }
-}
+}*/
+
+//
