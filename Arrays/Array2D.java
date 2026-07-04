@@ -133,7 +133,7 @@ public class Array2D {
 }*/
 
 //Spiral print of a matrix
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 
 public class Array2D {
     static ArrayList<Integer> spiralPrint(int[][] arr) {
@@ -174,4 +174,4 @@ public class Array2D {
         System.out.println(result);
 
     }
-}
+}*/
