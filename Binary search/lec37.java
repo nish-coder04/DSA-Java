@@ -28,7 +28,7 @@
 }*/
 
 //Upper Bound
-public class lec37 {
+/*public class lec37 {
     static int getUpperBound(int[] arr, int target) {
         int n = arr.length;
         int s = 0;
@@ -53,5 +53,46 @@ public class lec37 {
         int output = getUpperBound(arr, target);
         System.out.println(output);
 
+    }
+}*/
+
+//Number of occurence
+public class lec37 {
+    static int numOfOccurence(int[] arr, int target) {
+        int n = arr.length;
+        int s = 0;
+        int e = n - 1;
+        int lowerBound = 0;
+        int upperBound = 0;
+        int output = -1;
+        while (s <= e) {
+            int mid = s + (e - s) / 2;
+            if (arr[mid] >= target) {
+                lowerBound = mid;
+                e = mid - 1;
+            } else {
+                s = mid + 1;
+            }
+        }
+        s = 0;
+        e = n - 1;
+        while (s <= e) {
+            int mid = s + (e - s) / 2;
+            if (arr[mid] > target) {
+                upperBound = mid;
+                e = mid - 1;
+            } else {
+                s = mid + 1;
+            }
+        }
+        output = upperBound - lowerBound;
+        return output;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 3, 3, 3, 4, 5 };
+        int target = 3;
+        int answer = numOfOccurence(arr, target);
+        System.out.println(answer);
     }
 }
