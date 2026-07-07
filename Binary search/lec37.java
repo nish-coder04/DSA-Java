@@ -63,7 +63,7 @@ public class lec37 {
         int s = 0;
         int e = n - 1;
         int lowerBound = 0;
-        int upperBound = 0;
+        int upperBound = arr.length;
         int output = -1;
         while (s <= e) {
             int mid = s + (e - s) / 2;
@@ -90,7 +90,7 @@ public class lec37 {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 3, 3, 3, 4, 5 };
+        int[] arr = { 1, 2, 3, 3, 3, 3 };
         int target = 3;
         int answer = numOfOccurence(arr, target);
         System.out.println(answer);
