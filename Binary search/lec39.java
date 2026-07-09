@@ -29,7 +29,7 @@
 
 //Search in sorted rotated array
 public class lec39 {
-    static int findPivotIndex(int[] arr) {
+    static int findPivotIndex(int[] arr, int target) {
         int n = arr.length;
         int s = 0;
         int e = n - 1;
@@ -53,7 +53,7 @@ public class lec39 {
     public static void main(String[] args) {
         int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
         int target = 0;
-        int output = findTargetIndex(arr, target);
+        int output = findPivotIndex(arr, target);
         System.out.println(output);
 
     }
