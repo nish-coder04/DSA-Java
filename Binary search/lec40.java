@@ -75,6 +75,6 @@ public class lec40 {
     public static void main(String[] args) {
         int x = 56;
         double SquareRoot = Sqrt(x);
-        System.out.println(SquareRoot);
+        System.out.printf("%.3f%n", SquareRoot);
     }
 }
