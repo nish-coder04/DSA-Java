@@ -8,11 +8,9 @@ public class lec46 {
             int mid = s + (e - s) / 2;
             if (arr[mid] == target) {
                 answer = mid;
-            }
-            if (arr[mid - 1] == target) {
+            } else if (arr[mid - 1] == target) {
                 answer = mid - 1;
-            }
-            if (arr[mid + 1] == target) {
+            } else if (arr[mid + 1] == target) {
                 answer = mid + 1;
             }
             if (target > arr[mid]) {
