@@ -34,8 +34,6 @@
 }*/
 
 // Most frequent char
-import java.util.HashMap;
-
 public class lec51 {
     static char maxFreq(String a) {
         int[] freq = new int[26];
